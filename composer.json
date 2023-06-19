@@ -1,0 +1,33 @@
+{
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "S.V. Safronov",
+      "email": "safronov.stas@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-mysqli": "*",
+    "phpunit/phpunit": "^10.2"
+  },
+  "require-dev": {
+    "php": ">=8.1",
+    "vlucas/phpdotenv": "*",
+    "friendsofphp/php-cs-fixer": "^3.18"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "fix": "vendor/bin/php-cs-fixer fix",
+    "test": "vendor/bin/phpunit tests --display-notices"
+  }
+}
